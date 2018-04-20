@@ -25,7 +25,7 @@ try:
     import pypyodbc
 except ImportError as e:
     logger.warning("Loading Azure module without the python package pypyodbc. \
-        This will crash at runtime if Azure SQL functionality is used.")
+                   This will crash at runtime if Azure SQL functionality is used.")
 
 
 class AzureTarget(luigi.Target):
